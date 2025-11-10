@@ -8,8 +8,9 @@
     flex-direction: column;
     align-items: center;
     background-color: #1f2937;
-
+ 
 }
+
 h2{
     font-size: 48px;
     font-weight: bolder;
@@ -24,7 +25,7 @@ header{
     justify-content: center;
     align-items: baseline;
     margin-bottom: 80px;
-    
+    width: 100%;
 
 }
 a,p{
@@ -33,10 +34,11 @@ a,p{
 }
 ul,a{
     display: flex;
-    gap: 25px;
     list-style: none;
     text-decoration: none;
     color: black;
+    align-items: center;
+    margin: 0px 25px 0px 25px;
 }
 h2,p,button{
  align-self: flex-start;   
@@ -49,6 +51,7 @@ button{
 }
 .container{
     display: flex;
+
 }
 .ill1,.ill2{
     max-width: 250px;
@@ -57,8 +60,14 @@ button{
 .ill1 img,.ill2>img{
     width: 200px;
     height: 200px;
-    object-fit: cover;
-
+    /* contain makes the image a normal size and no crop the photo
+     fill makes every photo the same size but kind of stretches the photo
+     
+     I could have some kind of border to make it more fancy
+     */
+    object-fit: fill;
+    overflow: visible;
+    border: #1f2937;
 }
 .patts{
     max-width: 250px;
@@ -66,7 +75,7 @@ button{
 .patts>img{
     width: 220px;
     height: 250px;
-    object-fit: cover;
+    overflow: visible;
 }
 #hh{
     width: 100px;
@@ -77,10 +86,17 @@ button{
     background-size: cover;
     background-position: center; */
 
-    background: white;
+       background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.bottom{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: white;
 
 }
-
