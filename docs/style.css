@@ -1,3 +1,17 @@
+
+/* pink header
+brown be the link color
+yellow be the background
+
+add border a inch
+rearrange the photos 
+have the header image just be a icon 
+the about page add contact info
+footer have the bear icon and some contact info
+keep the two column idea
+make the images bigger
+
+*/
 *{
     padding: 0;
     margin: 0;
@@ -65,7 +79,7 @@ button{
      
      I could have some kind of border to make it more fancy
      */
-    object-fit: fill;
+    object-fit: contain;
     overflow: visible;
     border: #1f2937;
 }
