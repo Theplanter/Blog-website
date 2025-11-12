@@ -68,6 +68,7 @@ button{
     object-fit: fill;
     overflow: visible;
     border: #1f2937;
+    border: 2px solid black;
 }
 .patts{
     max-width: 250px;
@@ -82,9 +83,9 @@ button{
     height: 100px;
 }
 .top{
-    /* background-image: url('/images/Header.jpg');
+     background-image: url('/docs/images/Header.jpg');
     background-size: cover;
-    background-position: center; */
+    background-position: center; 
 
        background: white;
     display: flex;
@@ -98,5 +99,14 @@ button{
     align-items: center;
     justify-content: space-between;
     background: white;
+    padding-bottom: 150px;
+    background-image: url('/docs/images/Header.jpg');
+    /* contain makes it fit in the box and repeats itself
+    adding 100% 100% to it stretches the images to fit the whole screen*/
+    background-size: contain;
+    background-position: bottom; 
 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
