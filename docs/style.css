@@ -1,3 +1,18 @@
+
+/* pink header #ffa6b8;
+ 
+brown be the link color #582021
+yellow be the background #F7D17E
+
+add border a inch bcolor the brown 
+rearrange the photos 
+have the header image just be a icon 
+the about page add contact info
+footer have the bear icon and some contact info
+keep the two column idea
+make the images bigger
+
+*/
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1f2937;
+    background-color: #F7D17E;
  
 }
 
@@ -19,7 +34,7 @@ h2{
 }
 header{
     font-size: 24px;
-    color: #f6faf8; 
+    
     font-weight: bolder;
     display: flex;
     justify-content: center;
@@ -30,13 +45,13 @@ header{
 }
 a,p{
     font-size: 18px;
-    color: #e5e7eb;
+    color: #582021;
 }
 ul,a{
     display: flex;
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: #582021;
     align-items: center;
     margin: 0px 25px 0px 25px;
 }
@@ -65,7 +80,7 @@ button{
      
      I could have some kind of border to make it more fancy
      */
-    object-fit: fill;
+    object-fit: contain;
     overflow: visible;
     border: #1f2937;
     border: 2px solid black;
@@ -87,7 +102,7 @@ button{
     background-size: cover;
     background-position: center; 
 
-       background: white;
+       background: #ffa6b8; ;
     display: flex;
     align-items: center;
     justify-content: center;
