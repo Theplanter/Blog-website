@@ -40,7 +40,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-bottom: 80px;
     width: 100%;
 
 }
@@ -60,15 +59,17 @@ ul,a{
 .container{
     display: flex;
     background-color: #582021;
+    padding: 0 100px 0px 100px;
+    box-shadow: 0px 12px 27px black;
 
 }
 .ill1,.ill2{
-    max-width: 250px;
     
+    display: flex;
+    flex-direction: column;
 }
 .ill1 img,.ill2>img{
-    width: 200px;
-    height: 200px;
+width: 400px;   
     /* contain makes the image a normal size and no crop the photo
      fill makes every photo the same size but kind of stretches the photo
      
@@ -78,7 +79,9 @@ ul,a{
     overflow: visible;
     border: #1f2937;
     border: 2px solid black;
+  
 }
+
 .patts{
     max-width: 250px;
 }
