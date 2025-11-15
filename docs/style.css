@@ -61,17 +61,24 @@ ul,.top a{
     background-color: #582021;
     padding: 0 100px 0px 100px;
     box-shadow: 0px 12px 27px black;
- padding-top: 200px;
+ padding-top: 170px;
 
+}
+.columns{
+      display: flex;
+  gap: 20px;             /* space between columns */
+  align-items: flex-start;
 }
  .container h1{
      text-align: center;   /* centers the text */
   margin-top: 0;        /* removes default top space if needed */
+  color: #ffa6b8;
   padding-top: 20px;    /* optional — adds breathing room */
   font-size: 2.5rem; 
+      text-shadow:  3px 3px 2px #cc4e64;
 }
 .ill1,.ill2{
-    
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -91,7 +98,7 @@ width: 400px;
 }
 
 .patts, .patts2{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
 }
 .patts>img, .patts2>img{
@@ -143,4 +150,29 @@ footer{
 .about{
     width: 900px;
     padding-top: 100px;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  padding: 5px 0;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;               /* start from the right */
+  bottom: -3px;           /* underline position */
+  width: 0%;
+  height: 2px;
+  background-color: #000; /* underline color */
+  transition: width 0.3s ease, opacity 0.3s ease;
+  opacity: 0;             /* invisible at first */
+}
+
+nav a:hover::after {
+  width: 100%;            /* expands leftward */
+  opacity: 1;             /* fades in */
+  left: 0;
 }
