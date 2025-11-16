@@ -151,7 +151,10 @@ footer{
     width: 900px;
     padding-top: 100px;
 }
+#bot{
+gap: 20px;
 
+}
 nav a {
   position: relative;
   text-decoration: none;
