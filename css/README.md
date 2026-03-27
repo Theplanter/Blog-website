@@ -1,3 +1,3 @@
 # Blog-website
-make te website more size dynmai, and mobile friendly
-allow the ability to add and remove images 
+1. make te website more size dynmai, and mobile friendly. 
+2. allow the ability to add and remove images 
